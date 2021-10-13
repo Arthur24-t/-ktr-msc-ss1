@@ -9,10 +9,10 @@ using namespace std;
 int main() {
 
 	Character Warrior("Billy","Warrior", 100,10,8,3);
-	Character Mage("Axel","Mage", 70,3,10,10);
+	Character Mage("Kevin","Mage", 70,3,10,10);
 
-Movable warrior;
-Movable mage;
+
+Warrior.unsheathe();
 Warrior.attack("hammer");
 Mage.attack("wand");
 

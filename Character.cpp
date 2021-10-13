@@ -107,3 +107,8 @@ void Character::attack(string weapon) {
         
     }
 }
+
+void Character::unsheathe(){
+cout << "[" << name << "] : unsheathes his weapon !!"<<endl;
+
+}
