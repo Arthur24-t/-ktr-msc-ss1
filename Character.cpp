@@ -19,6 +19,14 @@ Character::Character(string _name, string _RPGClasse, int _life, int _agility, i
     agility = _agility;
     strength = _strength;
     wit = _wit;
+
+     if (RPGClass == "Warrior")
+    { cout << "[" << name << "] : My name will go down in history!" << endl;
+    }
+    
+    if (RPGClass == "Mage")
+    {cout << "[" << name << "] : May the gods be with me." << endl;
+    }
 }
 
 
@@ -70,4 +78,32 @@ void Character::show() {
 
 void Character::attack(string weapon) {
     cout << "[" << name << "] : Grrrrrrrrrr" << endl;
+
+   
+
+
+
+    if (RPGClass == "Warrior")
+    {
+        if (weapon == "hammer" || weapon == "sword")
+        {
+            cout << "[" << name << "] : I'll crush you with my "<<"["<<weapon<<"]" << endl;
+        }
+        else
+        
+        cout << "[" << name << "] : I don't have weapon !!"<<endl;
+        
+    }
+     if (RPGClass == "Mage")
+    {
+        
+        if (weapon == "magic" || weapon == "wand")
+        {
+            cout << "[" << name << "] : Feel the power of my "<<"["<<weapon<<"]" << endl;
+        }
+        else
+        
+        cout << "[" << name << "] : I don't have weapon !!"<<endl;
+        
+    }
 }
