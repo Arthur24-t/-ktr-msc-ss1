@@ -37,6 +37,7 @@ public:
     void show();
     void attack(string);
     void unsheathe();
+    void tryToAttack(string);
 };
 
 

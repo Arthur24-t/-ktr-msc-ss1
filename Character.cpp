@@ -87,7 +87,7 @@ void Character::attack(string weapon) {
     {
         if (weapon == "hammer" || weapon == "sword")
         {
-            cout << "[" << name << "] : I'll crush you with my "<<"["<<weapon<<"]" << endl;
+            cout << "[" << name << "] : I'll crush you with my "<<weapon << endl;
         }
         else
         
@@ -99,7 +99,7 @@ void Character::attack(string weapon) {
         
         if (weapon == "magic" || weapon == "wand")
         {
-            cout << "[" << name << "] : Feel the power of my "<<"["<<weapon<<"]" << endl;
+            cout << "[" << name << "] : Feel the power of my "<<weapon << endl;
         }
         else
         
@@ -112,3 +112,45 @@ void Character::unsheathe(){
 cout << "[" << name << "] : unsheathes his weapon !!"<<endl;
 
 }
+
+void Character::tryToAttack(string weapon){
+
+if (RPGClass == "Warrior")
+    {
+        if (weapon == "hammer" || weapon == "sword")
+        {
+            cout << "[" << name << "] : I'll crush you with my "<<weapon<< endl;
+        }
+        else if (weapon == "")
+        {
+            cout << "[" << name << "] : I refuse to fight with my bare hands!!"<<endl;
+        }
+        else 
+        {
+            cout << "[" << name << "] : A "<< weapon << "??? What should I do with this ?! "<<endl;
+        }
+        
+        
+        
+        
+    }
+     if (RPGClass == "Mage")
+    {
+        
+        if (weapon == "magic" || weapon == "wand")
+        {
+            cout << "[" << name << "] : Feel the power of my "<<weapon<<endl;
+        }
+         else if (weapon == "")
+        {
+            cout << "[" << name << "] : I refuse to fight with my bare hands!!"<<endl;
+        }
+        else 
+        {
+            cout << "[" << name << "] : I don 't need this stupid "<< weapon << "! Don 't misjudge my powers ! "<<endl;
+        }
+        
+    }
+}
+
+

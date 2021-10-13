@@ -13,7 +13,7 @@ int main() {
 
 
 Warrior.unsheathe();
-Warrior.attack("hammer");
+Warrior.tryToAttack("thinks");
 Mage.attack("wand");
 
 
