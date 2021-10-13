@@ -6,19 +6,44 @@ using namespace std;
 
 void Movable::moveRight(){
 
-cout << "[" << name << "] : Moves right" << endl;
+if (RPGClass == "Warrior")
+    { cout << "[" << name << "] : move right like a badboy" << endl;
+    }
+    
+    if (RPGClass == "Mage")
+    {cout << "[" << name << "] : move right furtively" << endl;
+    }
 
 
 }
     void Movable::moveLeft(){
-cout << "[" << name << "] : Moves Left" << endl;
+if (RPGClass == "Warrior")
+    { cout << "[" << name << "] : move Left like a badboy" << endl;
+    }
+    
+    if (RPGClass == "Mage")
+    {cout << "[" << name << "] : move Left furtively" << endl;
+    }
 
     }
     void Movable::moveForward(){
-cout << "[" << name << "] : Moves Forward" << endl;
+if (RPGClass == "Warrior")
+    { cout << "[" << name << "] : move Forward like a badboy" << endl;
+    }
+    
+    if (RPGClass == "Mage")
+    {cout << "[" << name << "] : move Forward furtively" << endl;
+    }
 
     }
     void Movable::moveBack(){
 
-cout << "[" << name << "] : Moves Back" << endl;
+if (RPGClass == "Warrior")
+    { cout << "[" << name << "] : move Back like a badboy" << endl;
     }
+    
+    if (RPGClass == "Mage")
+    {cout << "[" << name << "] : move Back furtively" << endl;
+    }
+    }
+    
