@@ -13,6 +13,7 @@ protected:
     int agility;
     int strength;
     int wit;
+    
 
 public:
 
