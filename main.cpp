@@ -1,9 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Character.hpp"
-#include "Character.cpp"
 #include "movable.hpp"
-#include "movable.cpp"
 using namespace std;
 
 int main() {
